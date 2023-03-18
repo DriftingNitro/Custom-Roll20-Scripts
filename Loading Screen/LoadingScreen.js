@@ -35,11 +35,11 @@ on("chat:message", function(msg) {
         }
         });
         if (!loadingTip) {
-            sendChat("loading screen", "Loading tip not found, make sure it is named 'loading_tip' in the token settings.");
+            log("Loading tip not found, make sure it is named 'loading_tip' in the token settings.");
             return;
         };
         if (!loadingImage) {
-            log("loading screen", "Loading image not found, make sure it is named 'loading_image' in the token settings.");
+            log("Loading image not found, make sure it is named 'loading_image' in the token settings.");
             return;
         };
         
